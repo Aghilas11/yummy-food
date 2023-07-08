@@ -29,14 +29,14 @@ const SocialNetwork = () => {
           </li>
         </a>
         <a
-          href="https://www.twitter.com"
+          href="https://www.tiktok.com"
           target="_blank"
           rel="noopener norrferrer"
           className="hover"
           onMouseOver={anim}
         >
           <li>
-            <i className="fab fa-twitter"></i>
+            <i className="fab fa-tiktok"></i>
           </li>
         </a>
         <a
