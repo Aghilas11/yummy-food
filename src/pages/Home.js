@@ -4,6 +4,7 @@ import Mouse from "../components/Mouse";
 import SocialNetwork from "../components/SocialNetwork";
 import DynamicText from "../components/DynamicText";
 import Buttons from "../components/Buttons";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -14,10 +15,28 @@ const Home = () => {
         <SocialNetwork />
         <div className="home-main">
           <div className="main-content">
-            <h1>YUMMY's FOOD</h1>
-            <h2>
+            <motion.h1
+              drag
+              dragConstrenits={{
+                left: -250,
+                right: 950,
+                top: -200,
+                bottom: 250,
+              }}
+            >
+              YUMMY's FOOD
+            </motion.h1>
+            <motion.h2
+              drag
+              dragConstrenits={{
+                left: -250,
+                right: 950,
+                top: -200,
+                bottom: 250,
+              }}
+            >
               <DynamicText />
-            </h2>
+            </motion.h2>
           </div>
         </div>
         <Buttons right={"/projet-1"} />
